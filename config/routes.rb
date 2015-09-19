@@ -10,5 +10,3 @@ Rails.application.routes.draw do
 
       post "creatures", to: "creatures#create"
 end
-
-#     get '/creatures/:id', to: 'creatures#show'
