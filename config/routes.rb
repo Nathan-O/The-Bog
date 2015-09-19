@@ -4,10 +4,3 @@ Rails.application.routes.draw do
       get "/creatures", to: "creatures#index"
    end
 end
-
-
-# RouteApp::Application.routes.draw do
-#     root to: 'creautres#index'
-#     ## Also just to keep it RESTful
-#     get '/creatures', to: "creatures#index"
-# end
