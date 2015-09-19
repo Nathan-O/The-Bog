@@ -5,6 +5,11 @@ class CreaturesController < ApplicationController
       render :index
    end
 
+   def new
+      render :new
+   end
+   
+
 
 
 
