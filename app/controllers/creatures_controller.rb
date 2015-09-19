@@ -6,11 +6,12 @@ class CreaturesController < ApplicationController
    end
 
    def new
+      @creature = Creature.new
       render :new
    end
 
    def create
-      new_create = params.require(:creature).permit(:name, :description)
+      new_creature = params.require(:creature).permit(:name, :description)
       Creature.create(new_creature)
       redirect_to "/creatures"
    end
@@ -18,9 +19,3 @@ class CreaturesController < ApplicationController
 
 
 end
-
-# def create
-#             new_creature = params.require(:creature).permit(:name, :description)
-#             Creature.create(new_creature)
-#             redirect_to "/creatures"
-#         end
