@@ -29,10 +29,3 @@ class CreaturesController < ApplicationController
    end
 
 end
-
-#
-# def edit
-#             id = params[:id]
-#             @creature = Creature.find(id)
-#             render :edit
-#         end
