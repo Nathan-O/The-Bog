@@ -13,7 +13,7 @@ class CreaturesController < ApplicationController
    def create
       new_creature = params.require(:creature).permit(:name, :description)
       Creature.create(new_creature)
-      redirect_to "/creatures/#{creature.id}"
+      redirect_to "/creatures/#{creature_id}"
    end
 
    def show
@@ -26,6 +26,18 @@ class CreaturesController < ApplicationController
       id = params[:id]
       @creature = Creature.find(id)
       render :edit
+   end
+
+   def update
+      creature_id = params[:id]
+      creature = Creature.find(creature_id)
+
+      #grab update data
+      updated_attributes = params.require(:creature).permit(:name, :description)
+
+      #update creature
+      creature.update_attributes(updated_attributes)
+      redirect_to "/creatures/#{creature_id}"
    end
 
 end
