@@ -1,7 +1,29 @@
 == README
 
+
+If you study creatures this app is for you, if you have no idea what a creature is an you can only conceptualize horrible monster, even better!!
+
+This is a simple app made to categorize and describe a wide range of big creatures. From the hideous to the humble, this is where they go. Click add new to drop in an original entry. Read an entry and think to yourself, "No, that thing had four arms the last time I saw one. You're wrong Internet." No worries just edit the post to reflect your reality. Easy.
+
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
+
+----------
+
+To run:
+
+After downloading the file open it and run the rails server in your command termianl.
+
+Go to localhost:3000
+
+Enjoy
+
+******************
+
+NOTE:
+
+THis is horiibly unstyled. And by that I mean unfortunatly not at all. I do plan to add styling later, simply didn't have time before the deadline given. (Stupid update route!)
 
 Things you may want to cover:
 
