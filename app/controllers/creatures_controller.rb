@@ -31,13 +31,18 @@ class CreaturesController < ApplicationController
    def update
       creature_id = params[:id]
       creature = Creature.find(creature_id)
-
       #grab update data
       updated_attributes = params.require(:creature).permit(:name, :description)
-
       #update creature
       creature.update_attributes(updated_attributes)
       redirect_to "/creatures/#{creature_id}"
+   end
+
+   def destroy
+      id = params[:id]
+      creature = Creature.find(id)
+      creature.destroy
+      redirect_to "/creatures"
    end
 
 end
